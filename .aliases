@@ -8,7 +8,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # programs
-alias slt='open -a "Sublime Text 2"'
+alias slt='open -a "Sublime Text"'
 # also/or do this:
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
@@ -18,9 +18,9 @@ alias please=sudo
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
 
 # handy things
-alias bunyip='node ~/code/bunyip/cli.js'
-alias spotify="osascript ~/code/SpotifyControl/SpotifyControl.scpt"
-alias vlc="osascript ~/code/VLCControl/VLCControl.scpt"
+# alias bunyip='node ~/code/bunyip/cli.js'
+# alias spotify="osascript ~/code/SpotifyControl/SpotifyControl.scpt"
+# alias vlc="osascript ~/code/VLCControl/VLCControl.scpt"
 
 
 # Detect which `ls` flavor is in use
@@ -110,6 +110,7 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # One of @janmoesen’s ProTip™s
+# further reading: http://linux.about.com/library/cmd/blcmdl1_lwp-request.htm
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 	alias "$method"="lwp-request -m '$method'"
 done
